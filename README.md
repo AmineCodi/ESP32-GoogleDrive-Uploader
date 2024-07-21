@@ -13,37 +13,36 @@ Secure connection using HTTPS.
 
 ### Setup Instructions
  1.  Clone the Repository:
-''''bash
+````
+bash
 git clone https://github.com/yourusername/ESP32-GoogleDrive-Uploader.git
 cd ESP32-GoogleDrive-Uploader*
-''''
+````
  3. Configure Wi-Fi Credentials:
 Open the code file and update the ssid and password variables with your Wi-Fi network credentials:
-'''cpp
+````
+cpp
 const char* ssid = "WIFI";  // Wi-Fi account
 const char* password = "AAAAAAAA";  // Wi-Fi password
-'''
+````
  5. Set Google Apps Script:
+###### Copy the content of the file GoogleScript.gs to your goolge Script project.
 Create a [Google Script](https://script.google.com/home "Google Script Home") Google Apps Script to handle file uploads. Use the provided URL in the myScript variable:
-''' 
+````
 cpp
 String myScript = "https://script.google.com/macros/s/your_script_id/exec";  // Set Google Script path
-'''   
-
+````
  7. Customize File Content:
 Edit the fileContent variable to change the content of the file you want to upload:
-''' 
+````
 cpp
 String fileContent = "This is the content of the file.";  // Edit this string to change the file content
-'''
+````
  9. Upload the Code: 
  Connect your ESP32 board to your computer and upload the code using the Arduino IDE.
-
  10.  Monitor Output:
 Open the Serial Monitor to view connection status and responses from the Google Apps Script.
 ## Code Overview
-
-
 * The code connects to the specified Wi-Fi network.
 * It constructs a POST request to send data to the Google Apps Script.
 * The content of the file is URL-encoded before being sent.
