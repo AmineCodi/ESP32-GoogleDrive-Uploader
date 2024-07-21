@@ -31,7 +31,7 @@ const char* password = "WIFI-password";  // customize Wi-Fi password
 ````
  3. Set Google Apps Script:
 ###### Copy the content of the file GoogleScript.gs to your goolge Script project.
-Create a [Google Script]("https://script.google.com/home "Google Script Home") Apps to handle file uploads. Use the provided URL in the myScript variable:
+Create a [Google Script](https://script.google.com/home "Google Script Home") Apps to handle file uploads. Use the provided URL in the myScript variable:
 ````
 cpp
 String myScript = "https://script.google.com/macros/s/your_script_id/exec";  // Set Google Script path
@@ -55,7 +55,7 @@ Connect your Sd Card to esp32 like shown in the table below.
 | MOSI           | 14 |
 | SCK            | 27 |
 
-Upload the [SDFat library ]("https://github.com/greiman/SdFat") in your Arduino code.
+Upload the [SDFat library ](https://github.com/greiman/SdFat"SDFat library") in your Arduino code.
 
  6. Upload the Code:
     
