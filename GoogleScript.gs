@@ -1,6 +1,10 @@
 // Google Apps Script
 
-/*This Google Apps Script handles POST requests for uploading text files to Google Drive. It processes incoming data, checks for required parameters, and manages file creation or appending based on chunked uploads. The script includes rate limiting to prevent excessive requests and logs errors for debugging. It returns a JSON response indicating the success or failure of the upload operation, along with the file's URL if successfully uploaded. Ideal for integrating with IoT devices like ESP32 for cloud storage solutions.*/
+/*This Google Apps Script handles POST requests for uploading text files to Google Drive. It processes incoming data,
+checks for required parameters, and manages file creation or appending based on chunked uploads.
+The script includes rate limiting to prevent excessive requests and logs errors for debugging.
+It returns a JSON response indicating the success or failure of the upload operation, along with the file's URL if successfully uploaded. 
+Ideal for integrating with IoT devices like ESP32 for cloud storage solutions.*/
 function doPost(e) {
   var response = {
     status: "error",
