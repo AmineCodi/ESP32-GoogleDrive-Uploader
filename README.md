@@ -25,7 +25,7 @@ cd ESP32-GoogleDrive-Uploader*
 
 Open the code file and update the ssid and password variables with your Wi-Fi network credentials:
 ```
-C++
+cpp
 const char* ssid     = "WIFI-ssid";  //customize Wi-Fi ssid
 const char* password = "WIFI-password";  // customize Wi-Fi password
 ```
@@ -33,13 +33,13 @@ const char* password = "WIFI-password";  // customize Wi-Fi password
 ###### Copy the content of the file GoogleScript.gs to your goolge Script project.
 Create a [Google Script](https://script.google.com/home "Google Script Home") Apps to handle file uploads. Use the provided URL in the myScript variable:
 ```
-C++
+cpp
 String myScript = "https://script.google.com/macros/s/your_script_id/exec";  // Set Google Script path
 ```
  4. Customize File Content:
 Edit the fileContent variable to change the content of the file you want to upload:
 ```
-C++
+cpp
 String fileContent = "This is the content of the file.";  // Edit this string to change the file content
 ```
  5. Connect an Sd Card to ESP32 :
