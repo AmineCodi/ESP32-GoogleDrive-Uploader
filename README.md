@@ -13,10 +13,10 @@ Secure connection using HTTPS.
 
 ### Setup Instructions
  1.  Clone the Repository:
-'''bash
+''''bash
 git clone https://github.com/yourusername/ESP32-GoogleDrive-Uploader.git
 cd ESP32-GoogleDrive-Uploader*
-'''
+''''
  3. Configure Wi-Fi Credentials:
 Open the code file and update the ssid and password variables with your Wi-Fi network credentials:
 '''cpp
