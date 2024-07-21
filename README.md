@@ -22,6 +22,7 @@ git clone https://github.com/yourusername/ESP32-GoogleDrive-Uploader.git
 cd ESP32-GoogleDrive-Uploader*
 ````
  2. Configure Wi-Fi Credentials:
+
 Open the code file and update the ssid and password variables with your Wi-Fi network credentials:
 ````
 cpp
@@ -42,6 +43,7 @@ cpp
 String fileContent = "This is the content of the file.";  // Edit this string to change the file content
 ````
  5. Connect an Sd Card to ESP32 :
+
 If you would like to send files from Sd Card to google drive, you will find the code for this in this repository.
 Connect your Sd Card to esp32 like shown in the table below.
 | SD Card module | ESP32 |
@@ -53,9 +55,10 @@ Connect your Sd Card to esp32 like shown in the table below.
 | MOSI           | 14 |
 | SCK            | 27 |
 
- 6. Upload the Code: 
+ 6. Upload the Code:
+    
  Connect your ESP32 board to your computer and upload the code using the Arduino IDE.
- 7. Monitor Output:
+ 8. Monitor Output:
 Open the Serial Monitor to view connection status and responses from the Google Apps Script.
 ## Code Overview
 * The code connects to the specified Wi-Fi network.
