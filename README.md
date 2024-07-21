@@ -42,7 +42,7 @@ cpp
 String fileContent = "This is the content of the file.";  // Edit this string to change the file content
 ````
  5. Connect an Sd Card to ESP32 :
-    If you would like to send files from Sd Card to google drive, you will find the code for this in this repository.
+If you would like to send files from Sd Card to google drive, you will find the code for this in this repository.
 Connect your Sd Card to esp32 like shown in the table below.
 |SD Card module|ESP32|    
 |----|-----|    
