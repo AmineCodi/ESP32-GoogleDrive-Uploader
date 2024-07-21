@@ -1,9 +1,14 @@
-const char* ssid     = "WIFI";
-const char* password = "AAAAAAAA";
+/* The ESP32 Google Drive Uploader repository contains an ESP32 project that enables users to upload text files from an SD card to Google Drive.
+The code reads files from the SD card, connects to Wi-Fi, and sends them to a Google Apps Script for storage. 
+It supports various text file formats (.txt, .csv, .log) while automatically skipping non-text files,
+and establishes a secure HTTPS connection for uploads.
+*/
+const char* ssid     = "WIFI-ssid";  //customize Wi-Fi ssid
+const char* password = "WIFI-password";  // customize Wi-Fi password
 
 const char* myDomain = "script.google.com";
-String myScript = "https://script.google.com/macros/s/AKfycbx8yvXz7YD3H7P2yME72ucRObkM-zxuKdTrQXIsEh_191cbsUTaLis8z7-rWZ_xT_ikSg/exec";
-String myFoldername = "myDriveFolder";
+String myScript = "myScript-URL";  // Set Google Script path
+String myFoldername = "myDriveFolder";  // Set Google Drive folder name to store text data
 
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
