@@ -15,7 +15,7 @@ Secure connection using HTTPS.
 * A Google account to set up Google Apps Script
 
 ### Setup Instructions
- 1.  Clone the Repository:
+ 1. Clone the Repository:
 ````
 bash
 git clone https://github.com/yourusername/ESP32-GoogleDrive-Uploader.git
@@ -53,10 +53,9 @@ Connect your Sd Card to esp32 like shown in the table below.
 | MOSI           | 14 |
 | SCK            | 27 |
 
-
- 8. Upload the Code: 
+ 6. Upload the Code: 
  Connect your ESP32 board to your computer and upload the code using the Arduino IDE.
- 9.  Monitor Output:
+ 7. Monitor Output:
 Open the Serial Monitor to view connection status and responses from the Google Apps Script.
 ## Code Overview
 * The code connects to the specified Wi-Fi network.
