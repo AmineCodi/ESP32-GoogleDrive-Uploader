@@ -16,30 +16,26 @@ Secure connection using HTTPS.
 
 ### Setup Instructions
  1. Clone the Repository:
-```
-bash
-git clone https://github.com/yourusername/ESP32-GoogleDrive-Uploader.git
+```bash
+git clone https://github.com/AmineCodi/ESP32-GoogleDrive-Uploader.git
 cd ESP32-GoogleDrive-Uploader*
 ```
  2. Configure Wi-Fi Credentials:
 
 Open the code file and update the ssid and password variables with your Wi-Fi network credentials:
-```
-cpp
+```cpp
 const char* ssid     = "WIFI-ssid";  //customize Wi-Fi ssid
 const char* password = "WIFI-password";  // customize Wi-Fi password
 ```
  3. Set Google Apps Script:
 ###### Copy the content of the file GoogleScript.gs to your goolge Script project.
 Create a [Google Script](https://script.google.com/home "Google Script Home") Apps to handle file uploads. Use the provided URL in the myScript variable:
-```
-cpp
+```cpp
 String myScript = "https://script.google.com/macros/s/your_script_id/exec";  // Set Google Script path
 ```
  4. Customize File Content:
 Edit the fileContent variable to change the content of the file you want to upload:
-```
-cpp
+```cpp
 String fileContent = "This is the content of the file.";  // Edit this string to change the file content
 ```
  5. Connect an Sd Card to ESP32 :
