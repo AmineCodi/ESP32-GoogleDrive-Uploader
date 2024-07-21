@@ -1,4 +1,5 @@
 # ESP32-GoogleDrive-Uploader
+![Google Drive]([TargetUrl](https://www.numerama.com/wp-content/uploads/2024/03/google-drive.jpg))
 This ESP32 project allows easy file uploads from your microcontroller to Google Drive. It provides a straightforward way to send data, logs, or files to the cloud for storage or processing. The repo includes setup instructions, example code, and libraries to help you quickly integrate Google Drive file uploads into your IoT projects.
 ## Features
 Easily upload text files to Google Drive from an ESP32.
@@ -22,12 +23,12 @@ cd ESP32-GoogleDrive-Uploader*
 Open the code file and update the ssid and password variables with your Wi-Fi network credentials:
 ````
 cpp
-const char* ssid = "WIFI";  // Wi-Fi account
-const char* password = "AAAAAAAA";  // Wi-Fi password
+const char* ssid     = "WIFI-ssid";  //customize Wi-Fi ssid
+const char* password = "WIFI-password";  // customize Wi-Fi password
 ````
  5. Set Google Apps Script:
 ###### Copy the content of the file GoogleScript.gs to your goolge Script project.
-Create a [Google Script](https://script.google.com/home "Google Script Home") Google Apps Script to handle file uploads. Use the provided URL in the myScript variable:
+Create a [Google Script](https://script.google.com/home "Google Script Home") Apps to handle file uploads. Use the provided URL in the myScript variable:
 ````
 cpp
 String myScript = "https://script.google.com/macros/s/your_script_id/exec";  // Set Google Script path
