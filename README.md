@@ -54,7 +54,7 @@ Connect your Sd Card to esp32 like shown in the table below.
 | MISO           | 13 |
 | MOSI           | 14 |
 | SCK            | 27 |
-
+Upload the [ SDFat library ](https://github.com/greiman/SdFat") in your Arduino code.
  6. Upload the Code:
     
  Connect your ESP32 board to your computer and upload the code using the Arduino IDE.
